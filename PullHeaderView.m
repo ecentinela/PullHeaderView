@@ -87,7 +87,7 @@
 
 - (void)refreshLastUpdatedDate
 {
-    if ([_delegate respondsToSelector:@selector(PullHeaderViewDataSourceLastUpdated:)])
+    if ([_delegate respondsToSelector:@selector(pullHeaderViewDataSourceLastUpdated:)])
     {
         NSDate *date = [_delegate pullHeaderViewDataSourceLastUpdated:self];
         [self setLastUpdateDate:date];
